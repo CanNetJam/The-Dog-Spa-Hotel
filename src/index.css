@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .background {
+        @apply sm:h-full h-auto bg-no-repeat bg-center bg-cover bg-[url('https://coolbackgrounds.io/images/backgrounds/blue/blue-trianglify-8e4a0501.jpg')];
+    }
+    .header-topnav {
+        @apply hidden md:w-1/2 md:top-0.5 md:flex w-full md:justify-end md:items-center
+    }
+    .header-nav-wrapper {
+        @apply md:hidden top-16 pt-8 sm:w-64 right-0 sm:pt-8 h-screen sm:border-l-2 bg-white z-10 fixed w-screen overflow-y-auto;
+    }
+    .header-nav {
+        @apply h-64 w-full sm:w-64 grid gap-3;
+    }
+    .header-link {
+        @apply h-0 sm:h-1 w-full flex items-center justify-around;
+    }
+    .link-a {
+        @apply h-10 w-[70px] flex justify-center items-center text-yellow-200 font-bold text-[16px] cursor-pointer m-5 hover:text-yellow-100;
+    }
+    .link-b {
+        @apply h-10 sm:w-full w-full flex justify-center items-center font-bold text-[16px] cursor-pointer hover:bg-gray-50 rounded-md m-5;
+    }
+    .h-button {
+        @apply relative h-10 sm:w-[150px] w-[100px] sm:h-10 sm:px-3 font-bold text-[16px] rounded-full before:bg-yellow-200 before:-z-10 bg-blue-600 z-0 text-yellow-300 transition-colors before:absolute before:left-0 before:top-0 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:duration-300 hover:text-black before:hover:scale-x-100 overflow-hidden;
+    }
+}
